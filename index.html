@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="container">
+    <div class="header-controls">
+        <div class="page-options">
+            <button id="page1Btn" class="active">Hoja 1</button>
+            <button id="page2Btn">Hoja 2</button>
+            <button id="page3Btn">Hoja 3</button>
+            </div>
+    </div>
+    
+    <hr>
+    
+    <div class="content-area">
+        
+        <div id="page1" class="page-content active">
+            
+            <div class="table-container">
+                <div style="margin-bottom: 15px; font-weight: bold;">
+                    <label for="fechaActualInput">Fecha de Registro:</label>
+                    <input type="date" id="fechaActualInput" style="padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <h2>Mesa Principal</h2>
+                <button id="addHeaderTabla1" class="action-btn">Agregar Encabezado</button>
+                <button id="addMesaTabla1" class="action-btn">Agregar Mesa</button>
+                <table id="mainTable1">
+                    <thead>
+                        <tr>
+                            <th>Nombre Mesa</th>
+                            <th>
+                                <select class="header-select">
+                                    <option value=""></option>
+                                    <option value="SKJ LEL">SKJ LEL</option>
+                                    <option value="SKJ RTP">SKJ RTP</option>
+                                    <option value="BET LEL">BET LEL</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select class="header-select">
+                                    <option value=""></option>
+                                    <option value="SKJ LEL">SKJ LEL</option>
+                                    <option value="SKJ RTP">SKJ RTP</option>
+                                    <option value="BET LEL">BET LEL</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mesa 1</td>
+                            <td><input type="number" class="number-input"></td>
+                            <td><input type="number" class="number-input"></td>
+                        </tr>
+                        <tr>
+                            <td>Mesa 2</td>
+                            <td><input type="number" class="number-input"></td>
+                            <td><input type="number" class="number-input"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <h2>TEST</h2>
+                <button id="addHeaderTabla2" class="action-btn">Agregar Encabezado</button>
+                <button id="addMesaTabla2" class="action-btn">Agregar Mesa</button>
+                <table id="mainTable2">
+                    <thead>
+                        <tr>
+                            <th>Número de Fila</th>
+                            <th>
+                                <select class="header-select">
+                                    <option value=""></option>
+                                    <option value="SKJ LEL">SKJ LEL</option>
+                                    <option value="SKJ RTP">SKJ RTP</option>
+                                    <option value="BET LEL">BET LEL</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select class="header-select">
+                                    <option value=""></option>
+                                    <option value="SKJ LEL">SKJ LEL</option>
+                                    <option value="SKJ RTP">SKJ RTP</option>
+                                    <option value="BET LEL">BET LEL</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fila Test 1</td>
+                            <td><input type="number" class="number-input"></td>
+                            <td><input type="number" class="number-input"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="table-container">
+                <h2>PRUEBA</h2>
+                <button id="addHeaderTabla3" class="action-btn">Agregar Encabezado</button>
+                <button id="addMesaTabla3" class="action-btn">Agregar Mesa</button>
+                <table id="mainTable3">
+                    <thead>
+                        <tr>
+                            <th>Nombre Mesa</th>
+                            <th>
+                                <select class="header-select">
+                                    <option value=""></option>
+                                    <option value="SKJ LEL">SKJ LEL</option>
+                                    <option value="SKJ RTP">SKJ RTP</option>
+                                    <option value="BET LEL">BET LEL</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select class="header-select">
+                                    <option value=""></option>
+                                    <option value="SKJ LEL">SKJ LEL</option>
+                                    <option value="SKJ RTP">SKJ RTP</option>
+                                    <option value="BET LEL">BET LEL</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mesa 1</td>
+                            <td><input type="number" class="number-input"></td>
+                            <td><input type="number" class="number-input"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="page2" class="page-content">
+            <div class="table-container">
+                <div style="margin-bottom: 15px; font-weight: bold;">
+                    <label for="fechaActualInput">Fecha de Registro:</label>
+                    <input type="date" id="fechaActualInput" style="padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <h2>Mesa Principal</h2>
+                <button id="addHeaderTabla4" class="action-btn">Agregar Encabezado</button>
+                <button id="addMesaTabla4" class="action-btn">Agregar Mesa</button>
+                <table id="mainTable4">
+                    <thead>
+                        <tr>
+                            <th>Nombre Mesa</th>
+                            <th>
+                                <select class="header-select">
+                                    <option value=""></option>
+                                    <option value="SKJ LEL">SKJ LEL</option>
+                                    <option value="SKJ RTP">SKJ RTP</option>
+                                    <option value="BET LEL">BET LEL</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select class="header-select">
+                                    <option value=""></option>
+                                    <option value="SKJ LEL">SKJ LEL</option>
+                                    <option value="SKJ RTP">SKJ RTP</option>
+                                    <option value="BET LEL">BET LEL</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mesa 1</td>
+                            <td><input type="number" class="number-input"></td>
+                            <td><input type="number" class="number-input"></td>
+                        </tr>
+                        <tr>
+                            <td>Mesa 2</td>
+                            <td><input type="number" class="number-input"></td>
+                            <td><input type="number" class="number-input"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <h2>TEST</h2>
+                <button id="addHeaderTabla5" class="action-btn">Agregar Encabezado</button>
+                <button id="addMesaTabla5" class="action-btn">Agregar Mesa</button>
+                <table id="mainTable5">
+                    <thead>
+                        <tr>
+                            <th>Número de Fila</th>
+                            <th>
+                                <select class="header-select">
+                                    <option value=""></option>
+                                    <option value="SKJ LEL">SKJ LEL</option>
+                                    <option value="SKJ RTP">SKJ RTP</option>
+                                    <option value="BET LEL">BET LEL</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select class="header-select">
+                                    <option value=""></option>
+                                    <option value="SKJ LEL">SKJ LEL</option>
+                                    <option value="SKJ RTP">SKJ RTP</option>
+                                    <option value="BET LEL">BET LEL</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fila Test 1</td>
+                            <td><input type="number" class="number-input"></td>
+                            <td><input type="number" class="number-input"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <h2>PRUEBA</h2>
+                <button id="addHeaderTabla6" class="action-btn">Agregar Encabezado</button>
+                <button id="addMesaTabla6" class="action-btn">Agregar Mesa</button>
+                <table id="mainTable6">
+                    <thead>
+                        <tr>
+                            <th>Nombre Mesa</th>
+                            <th>
+                                <select class="header-select">
+                                    <option value=""></option>
+                                    <option value="SKJ LEL">SKJ LEL</option>
+                                    <option value="SKJ RTP">SKJ RTP</option>
+                                    <option value="BET LEL">BET LEL</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select class="header-select">
+                                    <option value=""></option>
+                                    <option value="SKJ LEL">SKJ LEL</option>
+                                    <option value="SKJ RTP">SKJ RTP</option>
+                                    <option value="BET LEL">BET LEL</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mesa 1</td>
+                            <td><input type="number" class="number-input"></td>
+                            <td><input type="number" class="number-input"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="page3" class="page-content">
+            <div class="table-container">
+                <div style="margin-bottom: 15px; font-weight: bold;">
+                    <label for="fechaActualInput">Fecha de Registro:</label>
+                    <input type="date" id="fechaActualInput" style="padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <h2>Mesa Principal</h2>
+                <button id="addHeaderTabla7" class="action-btn">Agregar Encabezado</button>
+                <button id="addMesaTabla7" class="action-btn">Agregar Mesa</button>
+                <table id="mainTable7">
+                    <thead>
+                        <tr>
+                            <th>Nombre Mesa</th>
+                            <th>
+                                <select class="header-select">
+                                    <option value=""></option>
+                                    <option value="SKJ LEL">SKJ LEL</option>
+                                    <option value="SKJ RTP">SKJ RTP</option>
+                                    <option value="BET LEL">BET LEL</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select class="header-select">
+                                    <option value=""></option>
+                                    <option value="SKJ LEL">SKJ LEL</option>
+                                    <option value="SKJ RTP">SKJ RTP</option>
+                                    <option value="BET LEL">BET LEL</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mesa 1</td>
+                            <td><input type="number" class="number-input"></td>
+                            <td><input type="number" class="number-input"></td>
+                        </tr>
+                        <tr>
+                            <td>Mesa 2</td>
+                            <td><input type="number" class="number-input"></td>
+                            <td><input type="number" class="number-input"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <h2>TEST</h2>
+                <button id="addHeaderTabla8" class="action-btn">Agregar Encabezado</button>
+                <button id="addMesaTabla8" class="action-btn">Agregar Mesa</button>
+                <table id="mainTable8">
+                    <thead>
+                        <tr>
+                            <th>Número de Fila</th>
+                            <th>
+                                <select class="header-select">
+                                    <option value=""></option>
+                                    <option value="SKJ LEL">SKJ LEL</option>
+                                    <option value="SKJ RTP">SKJ RTP</option>
+                                    <option value="BET LEL">BET LEL</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select class="header-select">
+                                    <option value=""></option>
+                                    <option value="SKJ LEL">SKJ LEL</option>
+                                    <option value="SKJ RTP">SKJ RTP</option>
+                                    <option value="BET LEL">BET LEL</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fila Test 1</td>
+                            <td><input type="number" class="number-input"></td>
+                            <td><input type="number" class="number-input"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <h2>PRUEBA</h2>
+                <button id="addHeaderTabla9" class="action-btn">Agregar Encabezado</button>
+                <button id="addMesaTabla9" class="action-btn">Agregar Mesa</button>
+                <table id="mainTable9">
+                    <thead>
+                        <tr>
+                            <th>Nombre Mesa</th>
+                            <th>
+                                <select class="header-select">
+                                    <option value=""></option>
+                                    <option value="SKJ LEL">SKJ LEL</option>
+                                    <option value="SKJ RTP">SKJ RTP</option>
+                                    <option value="BET LEL">BET LEL</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select class="header-select">
+                                    <option value=""></option>
+                                    <option value="SKJ LEL">SKJ LEL</option>
+                                    <option value="SKJ RTP">SKJ RTP</option>
+                                    <option value="BET LEL">BET LEL</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mesa 1</td>
+                            <td><input type="number" class="number-input"></td>
+                            <td><input type="number" class="number-input"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>

@@ -1,0 +1,136 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f2f5;
+}
+
+/* Estilos para el Contenedor de Opciones (Pestañas y Totales) */
+.page-options {
+    margin-bottom: 20px;
+    display: flex; /* Mantiene los elementos (botones y totales) en línea */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Estilos para los botones de las páginas */
+.page-options button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.page-options button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* Estilos para ocultar/mostrar las páginas */
+.page-content {
+    display: none;
+}
+
+.page-content.active {
+    display: block;
+}
+
+/* ------------------- Estilos de Tablas ------------------- */
+
+.table-container {
+    overflow-x: auto; /* Permite desplazamiento horizontal si la tabla es demasiado ancha */
+    margin-bottom: 30px;
+}
+
+table {
+    width: auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    table-layout: auto;
+}
+
+th, td {
+    border: 1px solid #c8c8c8;
+    padding: 8px 10px;
+    text-align: center;
+    font-size: 14px;
+    position: relative; /* Esencial para posicionar el marcador de comentario */
+    min-width: 100px;
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+    font-weight: bold;
+    min-width: 120px;
+}
+
+thead th {
+    background-color: #e8e8e8;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.header-select {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.number-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* ------------------- Estilos para Comentarios ------------------- */
+
+.comment-marker {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #ff9900; /* Naranja/Ámbar para el indicador */
+    cursor: pointer;
+    z-index: 10;
+}
+
+.comment-tooltip {
+    display: none;
+    position: absolute;
+    bottom: 100%; /* Aparece encima de la celda */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    text-align: left;
+}
+
+/* Regla para mostrar el marcador cuando hay un comentario */
+.has-comment .comment-marker {
+    display: block;
+}
+
+/* Regla para mostrar el tooltip al pasar el ratón */
+td.has-comment:hover .comment-tooltip {
+    display: block;
+}
